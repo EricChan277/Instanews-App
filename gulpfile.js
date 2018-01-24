@@ -22,8 +22,8 @@ gulp.task('browser-sync', function() {
       }
   });
 
-  gulp.watch('build/js/*.js').on('change', browserSync.reload);
+  gulp.watch('./build/js/*.js').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('watch', 'browser-sync'));
+gulp.task('default', gulp.parallel('watch', 'browser-sync'));
 
