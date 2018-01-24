@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Audrobot/Instanews-App#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
+    "eslint": "^4.16.0",
     "gulp": "^4.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0"
