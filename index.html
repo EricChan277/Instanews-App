@@ -3,8 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JSON-Instanews-App</title>  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> 
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="./build/css/style.min.css" type="text/css">
   </head>
       
   <body>
@@ -13,21 +12,21 @@
     <section>
       <div>Choose a section:</div>
         <select class="select">
-          <option value="main">Sections ...</option>
-          <option value="TBD">TBD</option>
-          <option value="TBD">TBD</option>
-          <option value="TBD">TBD</option>
+          <option value="home">home</option>
+          <option value="arts">arts</option>
+          <option value="technology">technology</option>
         </select>
       </div>
     </section>
 
+    <div class="loader"></div>
     <div class="gallery"></div>  
       
     <footer class="copy">© Copyright 2017
       <span id="insta">Instanews</span>
     </footer>
       
-    <script src="jquery-3.2.1.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./build/js/script.min.js"></script>  
 
   </body>

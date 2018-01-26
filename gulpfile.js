@@ -31,7 +31,7 @@ gulp.task('lint', function() {
   .pipe(eslint.failAfterError())
 });    
 
-gulp.task('script', gulp.series('lint', function () {
+gulp.task('script', gulp.series('lint', function scripts() {
   return gulp.src('./js/*.js')
   .pipe(uglify())
   .pipe(rename({ extname: '.min.js' }))
