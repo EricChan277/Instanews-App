@@ -1,67 +1,59 @@
-// ** runcoderun ** //
-$(document).ready(function () {
 
-  /** Change event on select list **/
-  $('.select').on("change", function () {
+$(document).ready(function () {  // runcoderun //
 
-    // ** gets dropdown value **// 
-    var sectionSelection = $(this).val();
+  $(document).ajaxStart(function(){
+    $('.loader').show();
+  });
 
-    // call the ajaxLoader function and pass in the variable sectionSelection
-    ajaxLoader(sectionSelection);
+  $(document).ajaxComplete(function(){
+    $('.loader').hide();
+  });
 
-  }); // .on change
+  $('.select').on('change', function () {  // on change event triggering select list //
+    
+    var sectionSelection = $(this).val();  // gets dropdown value // 
 
-  /** Ajax Loader load NYTimes articles and append to html **/
-  function ajaxLoader(selected) {
+    ajaxLoader(sectionSelection);  // call the ajaxLoader function and pass in the variable sectionSelection //
 
-    $('body').append('<div class="loading-text">Loading</div>');
+  }); // end of on change //
 
-    // $('.loader').hide();
-    // $(document).ajaxStart(function(){
-    //   $('.loader').show();
-    // });
-    // $(document).ajaxComplete(function(){
-    //   $('.loader').hide();
-    // });
-
-    // ** gifloader here  ** //
-    // beforeSend: function() {
-    //   $(".loader").show();
-    // },
-    // success: function(data) {
-    //   $(".loader").hide();
-    // }
+  function ajaxLoader(selected) {  // Ajax Loader - load NYTimes articles and append to html //
 
     var url = 'https://api.nytimes.com/svc/topstories/v2/' + selected + '.json';
     url += '?' + $.param({
-      'api-key': "e82c553e3a1b42babf51d20ade81079e"
+      'api-key': 'e82c553e3a1b42babf51d20ade81079e'
     });
 
-    // ** ajax request ** //
+   
     $.ajax({
       method: 'GET',
       url: url,
-    }).done(function (data) {
+    })
+    .done(function (data) {
+      $('.gallery').empty();
 
-      console.log(data);
-      // $('.gallery').empty();
-
-      // var topStory = data.results;
-
-      // console.log(topStory);
-      
-      // ** filtering stories ** //
-      $.each(data, function (index, value) {
-
+      var articlesWithImages = data.results.filter(function(article) {  
+        return article.multimedia[0];
       });
 
-    })
-    .always(function(){
+      var twelveArticles = articlesWithImages.slice(0, 12);
+    
+      var articlesHtml = '';
+
+      $.each(twelveArticles, function(index, article) {
+        articlesHtml += '<div class="article">'; 
+        articlesHtml += '<a href="' + article.short_url + '">';
+        articlesHtml += article.abstract;
+        articlesHtml += '<img src="' + article.multimedia[4].url + '" />';
+        articlesHtml += '</a></div>';
+        console.log(article);
+      });
+      
+      $('.gallery').append(articlesHtml);
+      
+    }) // end ajaxLoader
+    .always(function() {
       $('.loading-text').remove();
     });
-
-  }// end ajaxLoader
-
-
+  }
 }); // end doc ready
