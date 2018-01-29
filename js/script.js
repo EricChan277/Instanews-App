@@ -44,12 +44,11 @@ $(document).ready(function () {
       var articlesHtml = '';
 
       $.each(twelveArticles, function(index, article) {
-        articlesHtml += '<div class="article">'; 
-        articlesHtml += '<a href="' + article.short_url + '">';
-        articlesHtml += article.abstract;
-        articlesHtml += '<img src="' + article.multimedia[4].url + '" />';
-        articlesHtml += '</a></div>';
-        console.log(article);
+        console.log('url', article.multimedia[4].url); 
+        articlesHtml += '<a class="article-link" href="' + article.short_url + '">';
+        articlesHtml += '<div class="article" style="background-image: url(\'' + article.multimedia[4].url +'\');">'; 
+        articlesHtml += '<div class="article-text">' + article.abstract + '</div>';
+        articlesHtml += '</div></a>';
       });
       
       $('.gallery').append(articlesHtml);

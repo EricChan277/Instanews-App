@@ -10,6 +10,63 @@
 @import 'fonts';
 @import 'content';
 
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+  margin: 0;
+}
+
 .loading-text {
   color: white;
 }
+
+.loader {
+  display: none;
+}
+
+.article-link {
+  text-decoration: none;
+  color: navajowhite;
+}
+
+.article {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.article-text {
+  background-color: rgba(0,0,0,0.5);
+}
+
+header {
+  padding: 25px;
+}
+
+header img {
+  padding-top: 63px;
+  padding-bottom: 10px;
+  width: 218px;
+}
+
+header .selection {
+  font-size: 13px;
+}
+
+footer {
+  margin-top: 95px;
+}
+
+header .select {
+  font-size: 16px;
+
+}
+
+.selection {
+  margin-bottom: 14px;
+}
+
+

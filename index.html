@@ -3,26 +3,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JSON-Instanews-App</title>  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i" rel="stylesheet">
     <link rel="stylesheet" href="./build/css/style.min.css" type="text/css">
   </head>
       
   <body>
+    <header>
+    <img src="assets/images/nyt-logo.svg" class="logo" alt="logo">
+      <section>
+        <div class="selection">Choose a section:</div>
+          <select class="select">
+            <option value="home">home</option>
+            <option value="arts">arts</option>
+            <option value="business">business</option>
+            <option value="sports">sports</option>
+            <option value="technology">technology</option>
+            <option value="fashion">fashion</option>
+          </select>
+        </div>
+      </section>
+    </header>
     
-    <img src= "assets/images/nyt-logo.svg" alt="logo">
-    <section>
-      <div>Choose a section:</div>
-        <select class="select">
-          <option value="home">home</option>
-          <option value="arts">arts</option>
-          <option value="business">business</option>
-          <option value="sports">sports</option>
-          <option value="technology">technology</option>
-          <option value="fashion">fashion</option>
-        </select>
-      </div>
-    </section>
-
-    <div class="loader"></div>
+    <div class="loader">
+      <img src="assets/images/ajax-loader.gif"/>
+    </div>
+    
     <div class="gallery"></div>  
       
     <footer class="copy">© Copyright 2017
