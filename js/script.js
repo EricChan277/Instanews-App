@@ -47,7 +47,7 @@ $(document).ready(function () {
         console.log('url', article.multimedia[4].url); 
         articlesHtml += '<a class="article-link" href="' + article.short_url + '">';
         articlesHtml += '<div class="article" style="background-image: url(\'' + article.multimedia[4].url +'\');">'; 
-        articlesHtml += '<div class="article-text">' + article.abstract + '</div>';
+        articlesHtml += '<div class="article-text"><p>' + article.abstract + '</p></div>';
         articlesHtml += '</div></a>';
       });
       
