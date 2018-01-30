@@ -1,5 +1,5 @@
   
- +## Project 2 - Instanews App
+ # Project 2 - Instanews App
   
  -Click on the select bar and choose what stories to read.
  
@@ -7,11 +7,11 @@
   
   =======
 
- +## Take aways
+ ## Take aways
   
  +This opportunity was integral in the development of planning further projects. During this process I've learned to take a step back, mock-up, and strategize before writing code.
   
-  # Built With
+##Built With
   
  * [VScode](http://www.vscode.com) - Text Editor
  
