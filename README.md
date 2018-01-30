@@ -1,7 +1,7 @@
   
  # Project 2 - Instanews App
   
- -Click on the select bar and choose the catergoruy of story to read.
+ -Click on the select bar and choose the category of the story you wish to read.
  
  Using APIs, Jquery, SCSS, and HTML, I have created a webpage that pulls news stories from the New York Times API.
   
@@ -10,7 +10,7 @@
   
  This opportunity was integral in the development of planning further projects. During this process I've learned to take a step back, mock-up, and strategize before writing code.
   
-  Built With
+Built With
   
  * [VScode](http://www.vscode.com) - Text Editor
  
