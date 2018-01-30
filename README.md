@@ -6,7 +6,7 @@
  Using APIs, Jquery, SCSS, and HTML, I have created a webpage that pulls news stories from the New York Times API.
   
 
- ##Take aways
+ ## Take aways
   
  This opportunity was integral in the development of planning further projects. During this process I've learned to take a step back, mock-up, and strategize before writing code.
   
