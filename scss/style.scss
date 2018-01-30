@@ -81,12 +81,17 @@ header .select {
 
 }
 
+.header-transitioned {
+  margin: 30px;
+  padding: 0;
+}
+
 .selection {
   margin-bottom: 14px;
 }
 
 .loader {
-  width: 75px;
+  width: 65px;
   position: fixed;
   margin-top: 135px;
   margin-left: 135px;
@@ -94,10 +99,17 @@ header .select {
 
 
 @media screen and (min-width: 600px) {
+  
+  .logo {
+  flex: 0 1 25%;
+  margin: 0 1rem 0 0;
+  text-align: left;
+  }
+  
   header img {
-    padding-top: 63px;
-    padding-bottom: 10px;
-    width: 120px;
+    padding-top: 100px;
+    padding-bottom: 95px;
+    width: 135px;
   }
 
   header {
@@ -125,6 +137,16 @@ header .select {
     // flex-direction: row;
     // flex-wrap: wrap;
     // align-content: flex-start;
+  }
+
+  header .selection {
+    font-size: 14px;
+  }
+
+  .section {
+    padding-right: 130px;
+    padding-bottom: 15px;
+    padding-left: 20px;
   }
 
   .gallery{

@@ -15,6 +15,8 @@ $(document).ready(function () {
     
     var sectionSelection = $(this).val();   
 
+    $('header').addClass('header-transitioned');
+
     ajaxLoader(sectionSelection);  
 
   }); // end of on change //
