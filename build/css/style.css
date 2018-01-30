@@ -1,3 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 footer {
   color: #c2c2c2;
   background-color: black;
@@ -58,25 +77,6 @@ section {
   font-weight: 300;
   font-style: normal; }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: none; }
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
 .loading-text {
   color: white; }
 
@@ -128,7 +128,8 @@ footer {
   font-weight: 300;
   font-style: normal;
   font-size: 15px;
-  margin-top: 175px; }
+  margin-top: 27px;
+  padding-bottom: 48px; }
 
 header .select {
   font-size: 16px; }
@@ -136,7 +137,7 @@ header .select {
 .selection {
   margin-bottom: 14px; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
   header img {
     padding-top: 63px;
     padding-bottom: 10px;
@@ -151,7 +152,8 @@ header .select {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    height: 90vh; }
   .article-link {
     width: 50%;
     height: auto;

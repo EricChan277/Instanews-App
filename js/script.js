@@ -32,6 +32,7 @@ $(document).ready(function () {
     })
     .done(function (data) {
       $('.logo').css('width', '140px');
+      $('header').css('height', 'auto');
       $('.logo').css('padding-top', '0px');
       $('.gallery').empty();
 
