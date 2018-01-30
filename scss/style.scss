@@ -54,7 +54,7 @@ header {
 }
 
 header img {
-  padding-top: 63px;
+  padding-top: 104px;
   padding-bottom: 10px;
   width: 218px;
 }
@@ -84,6 +84,14 @@ header .select {
 .selection {
   margin-bottom: 14px;
 }
+
+.loader {
+  width: 75px;
+  position: fixed;
+  margin-top: 135px;
+  margin-left: 135px;
+}
+
 
 @media screen and (min-width: 600px) {
   header img {
