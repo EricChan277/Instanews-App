@@ -10,3 +10,10 @@ footer {
   margin-top: 27px;
   padding-bottom: 48px;
 }
+
+@media screen and (min-width: 1000px) {
+  footer {
+    text-align: left;
+    padding-left: 20px;
+  } 
+}

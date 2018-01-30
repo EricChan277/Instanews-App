@@ -10,3 +10,70 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
+
+.article-link {
+  text-decoration: none;
+  color: white;
+}
+
+.article {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 25px;
+}
+
+.article-text {
+  width: 100%;
+  // height: 400px;
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 25px;
+  position: absolute;
+  bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300px;
+  line-height: 25px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.selection {
+  margin-bottom: 14px;
+}
+
+.loader {
+  width: 65px;
+  position: fixed;
+  margin-top: 135px;
+  margin-left: 135px;
+}
+
+@media screen and (min-width: 600px) {
+  .article-link {
+    width: 50%;
+    height: auto;
+    flex: 1 1 50%;
+  }
+
+  .article {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .article-link {
+    width: 25%;
+    height: auto;
+    flex: 1 1 25%;
+  }
+
+  .article {
+    margin-top: 0;
+  }
+} 

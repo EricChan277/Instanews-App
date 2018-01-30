@@ -12,177 +12,35 @@
 
 
 
-.loading-text {
-  color: white;
-}
-
-.loader {
-  display: none;
-}
-
-.article-link {
-  text-decoration: none;
-  color: white;
-}
-
-.article {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  margin-top: 25px;
-}
-
-.article-text {
-  width: 100%;
-  // height: 400px;
-  background-color: rgba(0,0,0,0.5);
-  margin-top: 25px;
-  position: absolute;
-  bottom: 0;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300px;
-  line-height: 25px;
-  font-size: 16px;
-  text-align: left;
-  padding-left: 8px;
-}
-
-header {
-  padding: 30px;
-}
-
-header img {
-  padding-top: 104px;
-  padding-bottom: 10px;
-  width: 218px;
-}
-
-header .selection {
-  font-size: 13px;
-}
-
-footer {
-  color: #c2c2c2;
-  background-color: black;
-  min-width: 100%;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
-  margin-top: 27px;
-  padding-bottom: 48px;
-}
-
-header .select {
-  font-size: 16px;
-
-}
-
-.header-transitioned {
-  margin: 30px;
-  padding: 0;
-}
-
-.selection {
-  margin-bottom: 14px;
-}
-
-.loader {
-  width: 65px;
-  position: fixed;
-  margin-top: 135px;
-  margin-left: 135px;
-}
 
 
-@media screen and (min-width: 600px) {
+
+
+
+
+
+
+
+
+
+
+
+
   
-  .logo {
-  flex: 0 1 25%;
-  margin: 0 1rem 0 0;
-  text-align: left;
-  }
   
-  header img {
-    padding-top: 10px;
-    padding-bottom: 0;
-    width: 135px;
-  }
 
-  header {
-    padding: 94px;
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    height: 90vh;
-  }
+ 
 
-  .header-transitioned {
-    align-content: left;
-    top: 0;
-    padding: 0;
-    padding-left: 40px;
-      img {
-       height: 75px;
-      }
-  }
+  
 
-  .article-link {
-    width: 50%;
-    height: auto;
-    flex: 1 1 50%;
-  }
+  
 
-  .article {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin-top: 0;
-  }
 
-  header .selection {
-    font-size: 14px;
-  }
 
-  .section {
-    padding-right: 130px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-  }
 
-  .gallery{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
-}  
+  
 
-@media screen and (min-width: 1000px) {
-  .article-link {
-    width: 25%;
-    height: auto;
-    flex: 1 1 25%;
-  }
+      
 
-  .article {
-    margin-top: 0;
-  }
-
-  .header-transitioned {
-    height: auto;
-    top: 0;
-    margin-right: 350px;
-    padding-left: 20px;
-  }
-
-   footer {
-     text-align: left;
-     padding-left: 20px;
-   }    
-}
 
 
