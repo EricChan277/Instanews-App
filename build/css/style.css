@@ -155,21 +155,26 @@ header .select {
     margin: 0 1rem 0 0;
     text-align: left; }
   header img {
-    padding-top: 100px;
-    padding-bottom: 95px;
+    padding-top: 10px;
+    padding-bottom: 0;
     width: 135px; }
   header {
-    padding: 37px;
+    padding: 94px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     height: 90vh; }
+  .header-transitioned {
+    -ms-flex-line-pack: left;
+        align-content: left;
+    top: 0;
+    padding: 0;
+    padding-left: 40px; }
+    .header-transitioned img {
+      height: 75px; }
   .article-link {
     width: 50%;
     height: auto;
@@ -208,4 +213,12 @@ header .select {
         -ms-flex: 1 1 25%;
             flex: 1 1 25%; }
   .article {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .header-transitioned {
+    height: auto;
+    top: 0;
+    margin-right: 350px;
+    padding-left: 20px; }
+  footer {
+    text-align: left;
+    padding-left: 20px; } }

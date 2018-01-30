@@ -107,17 +107,27 @@ header .select {
   }
   
   header img {
-    padding-top: 100px;
-    padding-bottom: 95px;
+    padding-top: 10px;
+    padding-bottom: 0;
     width: 135px;
   }
 
   header {
-    padding: 37px;
+    padding: 94px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     height: 90vh;
+  }
+
+  .header-transitioned {
+    align-content: left;
+    top: 0;
+    padding: 0;
+    padding-left: 40px;
+      img {
+       height: 75px;
+      }
   }
 
   .article-link {
@@ -127,16 +137,10 @@ header .select {
   }
 
   .article {
-    // width: 300px;
-    // height: 300px;
     background-size: cover;
     background-position: center;
     position: relative;
     margin-top: 0;
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // align-content: flex-start;
   }
 
   header .selection {
@@ -168,6 +172,17 @@ header .select {
     margin-top: 0;
   }
 
+  .header-transitioned {
+    height: auto;
+    top: 0;
+    margin-right: 350px;
+    padding-left: 20px;
+  }
+
+   footer {
+     text-align: left;
+     padding-left: 20px;
+   }    
 }
 
 
